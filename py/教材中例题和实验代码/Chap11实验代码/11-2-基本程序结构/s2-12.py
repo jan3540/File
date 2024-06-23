@@ -1,0 +1,10 @@
+list1=eval(input())
+list2=sorted(list1)
+low=list2.index(60)
+high=list2.index(90)
+listlow=list2[0:low]
+listhigh=list2[high:]
+avglow=sum(listlow)/len(listlow)
+avghigh=sum(listhigh)/len(listhigh)
+print("不及格学生平均分:",avglow)
+print("优秀学生平均分:",avghigh)

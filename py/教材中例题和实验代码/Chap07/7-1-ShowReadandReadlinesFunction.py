@@ -1,0 +1,12 @@
+scores_file = open(r'scores.txt','r', encoding='utf-8')
+scores_read = scores_file.read()
+scores_file.seek(0)
+scores_readlines = scores_file.readlines()
+scores_file.close()
+print('调用read()函数，读取的结果是：'+repr(scores_read))
+print('读取数据的数据类型是：'+str(type(scores_read)))
+print('调用readlines()函数，读取的结果是：'+str(scores_readlines))
+print('读取数据的数据类型是：'+str(type(scores_readlines)))
+print('list中每个元素的数据类型是：', end='')
+for item in scores_readlines:
+   print(type(item), end=' ')
